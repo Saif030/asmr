@@ -16,7 +16,7 @@ export const STORAGE_UPLOAD_BLOCK_BYTES = Math.floor(STORAGE_QUOTA_BYTES * 0.93)
 export const STORAGE_WARN_BYTES = Math.floor(STORAGE_QUOTA_BYTES * 0.7);
 
 /** Per-file upload ceilings (validated on client and server). */
-export const MAX_PDF_BYTES = 20 * 1024 * 1024; // 20 MB
+export const MAX_PDF_BYTES = 100 * 1024 * 1024; // 100 MB
 export const MAX_IMAGE_BYTES = 5 * 1024 * 1024; // 5 MB
 export const MAX_CHAT_IMAGE_BYTES = 2 * 1024 * 1024; // 2 MB (compressed first)
 

@@ -27,9 +27,9 @@ export function validateMaterialFile(file: FileLike): ValidationResult {
     return { ok: false, error: "Only PDF files and images (JPG, PNG, WebP, GIF) are allowed." };
   }
 
-  // Check PDF size limit (20 MB)
+  // Check PDF size limit (100 MB)
   if (isPdf && file.size > MAX_PDF_BYTES) {
-    return { ok: false, error: "PDFs are limited to 20 MB." };
+    return { ok: false, error: "PDFs are limited to 100 MB." };
   }
 
   // Check image size limit (5 MB) - only if NOT a PDF

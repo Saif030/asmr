@@ -392,7 +392,7 @@ export function MaterialForm({ open, onOpenChange, subjects, material, onSaved }
                 ) : (
                   <span className="flex items-center gap-2">
                     <Upload className="h-4 w-4" />
-                    Choose a file (PDF ≤ 20 MB, image ≤ 5 MB)
+                    Choose a file (PDF ≤ 100 MB, image ≤ 5 MB)
                   </span>
                 )}
               </Button>
